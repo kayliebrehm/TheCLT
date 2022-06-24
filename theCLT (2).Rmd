@@ -103,10 +103,4 @@ This graph is unimodal with one peak around 52. There are no other distinct peak
 
 # Summary
 
-Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
-
-Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
-
- 
-
-Then submit the link to your github project  to canvas to complete this assignment.
+The central limit theorem states that the distribution of sample means approximates a normal distribution as the sample size gets larger, regardless of the population's distribution. It also states that for each sample, the mean should stay relatively the same. Additionally, the standard deviation should equal "sample standard deviation/square root of sample size." The original mean was 50.4003. For each of the sample variants, the mean hovers around 50. This fact is in line with the central limit theorem. The standard deviation of the original was 41.75955. When we take this value and divide it by the square root of the sample size, we see values of about 30 (for 2), 21 (for 4), 14 (for 9), 11 (for 16), and 7 (for 36). These rounded values are in line with the central limit theorem. Finally, with each sample size variant increase, we see a more balanced and precise unimodal distribution. This is in line with the central limit theorem. 
