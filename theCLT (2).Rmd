@@ -12,16 +12,20 @@ require(lattice)
 data("imagpop")
 ```
 
+
+# Original 
+
 ```{r}
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+print(mean(KK_data))
+print(sd(KK_data))
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+The resulting plot is bimodal. It has two peaks that are different sizes. The mean is 50.4003. The standard deviation is 41.75955.
 
-Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
+# 2 random samples
 
 ```{r}
 numb = 2
@@ -29,13 +33,15 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+The mean is about 49.4. The standard deviation is 41.7/sqrt2 which is about 30.0.
 
  
 
-Do this again for 4 random samples
+# 4 random samples
 
 ```{r}
 numb = 4
@@ -43,19 +49,28 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 4")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-Then again for 9 random samples
+
+The mean is about 50.5. The standard deviation is 41.7/sqrt4 which is about 21.2.
+
+# 9 random samples
 
 ```{r}
-numb = 
+numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 9")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
+The mean is about 50.0. The standard deviation is 41.7/sqrt9 which is about 14.2.
 
-then 16 random samples
+
+# 16 random samples
 
 ```{r}
 numb = 16
@@ -63,9 +78,15 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 16")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
-finally for 36 random samples.
+
+The mean is about 50.3. The standard deviation is 41.7/sqrt16 which is about 10.6.
+
+
+# 36 random samples.
 
 ```{r}
 numb = 36
@@ -73,7 +94,14 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 36")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
+
+
+The mean is about 50.6. The standard deviation is 41.7/sqrt36 which is about 7.1.
+
+# Summary
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
