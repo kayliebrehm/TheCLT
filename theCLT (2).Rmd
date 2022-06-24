@@ -37,7 +37,7 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-The mean is about 49.4. The standard deviation is 41.7/sqrt2 which is about 30.0.
+The graph is multimodal with three peaks. The highest peak sits around 50 while the other two sit around 10 and 90. All peaks have different sizes The mean is about 49.4. The standard deviation is 41.7/sqrt2 which is about 30.0.
 
  
 
@@ -54,7 +54,7 @@ print(sd(x.avg))
 ```
 
 
-The mean is about 50.5. The standard deviation is 41.7/sqrt4 which is about 21.2.
+The graph is multimodal with about 5 peaks. The tallest sits around 50. The next two tallest sit around 30 and 70. The smallest two sit around 10 and 90. All peaks have different sizes. The mean is about 50.5. The standard deviation is 41.7/sqrt4 which is about 21.2.
 
 # 9 random samples
 
@@ -67,7 +67,7 @@ densityplot(x.avg,main="sample size 9")
 print(mean(x.avg))
 print(sd(x.avg))
 ```
-The mean is about 50.0. The standard deviation is 41.7/sqrt9 which is about 14.2.
+This graph is unimodal with one distinct peak around 55. There are no other distinct peaks. The mean is about 50.0. The standard deviation is 41.7/sqrt9 which is about 14.2.
 
 
 # 16 random samples
@@ -83,7 +83,7 @@ print(sd(x.avg))
 ```
 
 
-The mean is about 50.3. The standard deviation is 41.7/sqrt16 which is about 10.6.
+This graph is unimodal with one peak around 55. There are no other distinct peaks. The mean is about 50.3. The standard deviation is 41.7/sqrt16 which is about 10.6.
 
 
 # 36 random samples.
@@ -99,7 +99,7 @@ print(sd(x.avg))
 ```
 
 
-The mean is about 50.6. The standard deviation is 41.7/sqrt36 which is about 7.1.
+This graph is unimodal with one peak around 52. There are no other distinct peaks. The mean is about 50.6. The standard deviation is 41.7/sqrt36 which is about 7.1.
 
 # Summary
 
